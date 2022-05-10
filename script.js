@@ -19,3 +19,4 @@ if (imc < 18.5) {
             alert("Você está acima do peso.");
         }
 }
+//

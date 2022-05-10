@@ -1,29 +1,27 @@
-<!Doctype html>
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>IMC</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+        }
+    </style>
 </head>
-
 <body>
-    <form id="formulario">
-        <fieldset>
-            <h1>Calculo IMC</h1>
-
-            <label for="metros">Metros:</label>
-            <input name="metros" type="text" />
-
-            <label for="kilos">Kilos:</label>
-            <input name="kilos" type="text" />
-
-            <label for="imc">IMC:</label>
-            <input name="imc" type="text" disabled="disabled" />
-
-            <a href="#" onclick="calcular();">Calcular</a>
-        </fieldset>
-    </form>
+    <div id="linha" style="height: 250px; width: 400px;"></div>
+    <div id="area" style="height: 250px; width: 400px;"></div>
+    <div id="donuts" style="height: 250px; width: 400px;"></div>
+    <div id="barra" style="height: 250px; width: 400px;"></div>
 </body>
-<script src="script.js"></script>
+<script src="graficos.js"></script>
 </html>
